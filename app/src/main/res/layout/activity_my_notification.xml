@@ -21,26 +21,4 @@
         android:layout_marginStart="137dp"
         android:layout_marginTop="178dp" />
 
-    <TextView
-        android:id="@+id/activity_text1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="113dp"
-        android:layout_below="@+id/activity_title"
-        android:layout_alignLeft="@+id/activity_title"
-        android:layout_alignStart="@+id/activity_title"
-        android:layout_marginTop="30dp" />
-
-    <TextView
-        android:id="@+id/activity_text2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:layout_alignTop="@+id/activity_text1"
-        android:layout_alignLeft="@+id/activity_text1"
-        android:layout_alignStart="@+id/activity_text1"
-        android:layout_marginTop="66dp" />
-
 </RelativeLayout>

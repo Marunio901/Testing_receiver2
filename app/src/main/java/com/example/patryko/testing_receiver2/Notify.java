@@ -55,15 +55,12 @@ private int id = 0;
         RemoteViews remoteViews = new RemoteViews(getPackageName(), R.layout.mojanotyfikacja);
 
 
-        String str_title = message + id;
-        String str_txt1 = "Tresc1: gdfgsdgsd";
-        String str_txt2 = "Tresc2: sdfgdgfdfg";
+        String str_title = message;
+
 
 
         Intent intent = new Intent(this, MyNotification.class);
         intent.putExtra("title", str_title);
-        intent.putExtra("text1", str_txt1);
-        intent.putExtra("text2", str_txt2);
 
         PendingIntent pIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
 
@@ -74,8 +71,7 @@ private int id = 0;
                 .setContent(remoteViews);
 
         remoteViews.setTextViewText(R.id.title, str_title);
-        remoteViews.setTextViewText(R.id.text1, str_txt1);
-        remoteViews.setTextViewText(R.id.text2, str_txt2);
+
 
         NotificationManager notman = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         notman.notify(id++, builder.build());
